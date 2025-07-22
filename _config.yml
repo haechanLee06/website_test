@@ -104,4 +104,3 @@ deploy:
   type: git
   repository: https://github.com/haechanLee06/haechanLee06.github.io.git
   branch: main
-  token: 
