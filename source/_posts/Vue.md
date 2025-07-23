@@ -2,6 +2,10 @@
 title: Vue
 date: 2024-11-12 11:45:45
 tags:
+  - Vue
+  - Frontend
+  - JavaScript
+  - Web Development
 ---
 
 ## 模板语法
@@ -170,7 +174,8 @@ data() {
 <form @submit.prevent="onSubmit">...</form>
 ```
 最后，可以直观地看到完整的指令语法：
-![指令语法图](image.png)
+
+![指令语法图](images/image.png)
 
 # 响应式基础
 ## 声明响应式状态
@@ -952,7 +957,7 @@ export default {
 ## 生命周期图示
 下面是实例生命周期的图表。你现在并不需要完全理解图中的所有内容，但以后它将是一个有用的参考。
 
-![组件生命周期图示](image2.png)
+![组件生命周期图示](images/image2.png)
 
 
 # 侦听器
@@ -1121,7 +1126,7 @@ export default {
 # 组件基础
 组件允许我们将 UI 划分为独立的、可重用的部分，并且可以对每个部分进行单独的思考。在实际应用中，组件常常被组织成一个层层嵌套的树状结构：
 
-![组件树](image3.png)
+![组件树](images/image3.png)
 
 
 这和嵌套 HTML 元素的方式类似，Vue 实现了自己的组件模型，使我们可以在每个组件内封装自定义内容与逻辑。Vue 同样也能很好地配合原生 Web Component。
@@ -1783,7 +1788,7 @@ click 监听器会被添加到``` <MyButton>``` 的根元素，即那个原生�
 ```
 ```<slot> ```元素是一个插槽出口 (slot outlet)，标示了父元素提供的插槽内容 (slot content) 将在哪里被渲染。
 
-![插槽图示](image4.png)
+![插槽图示](images/image4.png)
 
 最终渲染出的 DOM 是这样：
 ```js
@@ -1899,7 +1904,7 @@ function FancyButton(slotContent) {
 ```
 v-slot 有对应的简写 #，因此 ```<template v-slot:header>``` 可以简写为``` <template #header>```。其意思就是“将这部分模板片段传入子组件的 header 插槽中”。
 
-![具名插槽图示](image5.png)
+![具名插槽图示](iamges/image5.png)
 
 下面我们给出完整的、向``` <BaseLayout> ```传递插槽内容的代码，指令均使用的是缩写形式：
 
@@ -1970,7 +1975,7 @@ v-slot 有对应的简写 #，因此 ```<template v-slot:header>``` 可以简写
 </MyComponent>
 ```
 
-![scoped slots diagram](image6.png)
+![scoped slots diagram](images/image6.png) 
 
 
 子组件传入插槽的 props 作为了 v-slot 指令的值，可以在插槽内的表达式中访问。
@@ -2058,14 +2063,14 @@ v-slot="slotProps" 可以类比这里的函数签名，和函数的参数类似�
 ## Prop 逐级透传问题
 通常情况下，当我们需要从父组件向子组件传递数据时，会使用 props。想象一下这样的结构：有一些多层级嵌套的组件，形成了一棵巨大的组件树，而某个深层的子组件需要一个较远的祖先组件中的部分数据。在这种情况下，如果仅使用 props 则必须将其沿着组件链逐级传递下去，这会非常麻烦：
 
-![Prop 逐级透传的过程图示](image7.png)
+![Prop 逐级透传的过程图示](images/image7.png)
 
 
 注意，虽然这里的 ```<Footer>``` 组件可能根本不关心这些 props，但为了使``` <DeepChild>``` 能访问到它们，仍然需要定义并向下传递。如果组件链路非常长，可能会影响到更多这条路上的组件。这一问题被称为“prop 逐级透传”，显然是我们希望尽量避免的情况。
 
 provide 和 inject 可以帮助我们解决这一问题 [1](https://cn.vuejs.org/guide/components/provide-inject#footnote-1)。一个父组件相对于其所有的后代组件，会作为**依赖提供者**。任何后代的组件树，无论层级有多深，都可以**注入**由父组件提供给整条链路的依赖。
 
-![Provide/inject 模式](image8.png)
+![Provide/inject 模式](images/image8.png)
 
 
 ## Provide (提供)
@@ -2290,7 +2295,7 @@ export default {
 - 交互：状态根据用户在视图中的输入而作出相应变更的可能方式。
 下面是“单向数据流”这一概念的简单图示：
 
-![state flow diagram](image9.png)
+![state flow diagram](images/image9.png)
 
 然而，当我们有**多个组件共享一个共同的状态**时，就没有这么简单了：
 

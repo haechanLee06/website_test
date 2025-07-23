@@ -13,8 +13,9 @@ My main tech stack includes **Vue**, **React**, and other modern frontend tools 
 
 I’m also deeply interested in the field of **product management**, and currently learning product thinking, user-centered design, and prototyping using tools like **Figma**.  
 I enjoy exploring how technology and design come together to solve real-world problems, and I'm continuously growing through hands-on projects.
+And here's a photo of me when I was travelling in New Zealand.
+<img src="yuqipan.jpg" width="500">
 
----
 
 ## 💼 About Me
 
