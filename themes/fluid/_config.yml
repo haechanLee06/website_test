@@ -270,11 +270,11 @@ web_analytics:
   # LeanCloud 计数统计，可用于 PV UV 展示，如果 `web_analytics: enable` 没有开启，PV UV 展示只会查询不会增加
   # LeanCloud count statistics, which can be used for PV UV display. If `web_analytics: enable` is false, PV UV display will only query and not increase
   leancloud:
-    app_id: q1VlmYyYr07kxtSiLdvtxwli-MdYXbMMI
-    app_key: 4Jjlm7l8vGgpuTatnIAinO5Y
+    app_id: v5Pj40Hj1telkcFvIi7OQDKJ-gzGzoHsz
+    app_key: wHxXXI6tSzYelMqiajCCH6la
     # REST API 服务器地址，国际版不填
     # Only the Chinese mainland users need to set
-    server_url:
+    server_url: https://v5pj40hj.lc-cn-n1-shared.com
     # 统计页面时获取路径的属性
     # Get the attribute of the page path during statistics
     path: window.location.pathname
@@ -570,7 +570,7 @@ post:
     # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
     # Author, based on `author` field in front-matter, if not set, based on `author` value in hexo config
     author:
-      enable: false
+      enable: true
 
     # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
     # Post date, based on `date` field in front-matter, if not set, based on create date of .md file
