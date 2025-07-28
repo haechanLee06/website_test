@@ -1,0 +1,833 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="yuqi pan">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="1.AI产品体验报告 一位AI产品新人的通义千问深度体验：从初见到洞察写在前面：我的PM第一课从前端开发转向产品经理，是我职业路径中的一次重要转折。过去的我，习惯于从“如何实现”出发思考问题，面对一个需求，我首先会拆解技术点、选择框架、规划组件结构、优化交互体验。而当我真正开始尝试“产品思维”时，我才意识到：在“如何做”之前，真正重要的是“为什么做”和“为谁做”。 这份《通义千问》的体验报告，是我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 2.0 产品经理作业1">
+<meta property="og:url" content="http://example.com/2025/07/28/AI-PM-Work1/index.html">
+<meta property="og:site_name" content="haechannnnn">
+<meta property="og:description" content="1.AI产品体验报告 一位AI产品新人的通义千问深度体验：从初见到洞察写在前面：我的PM第一课从前端开发转向产品经理，是我职业路径中的一次重要转折。过去的我，习惯于从“如何实现”出发思考问题，面对一个需求，我首先会拆解技术点、选择框架、规划组件结构、优化交互体验。而当我真正开始尝试“产品思维”时，我才意识到：在“如何做”之前，真正重要的是“为什么做”和“为谁做”。 这份《通义千问》的体验报告，是我">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/%E7%95%8C%E9%9D%A2.png">
+<meta property="og:image" content="http://example.com/images/%E5%AF%B9%E8%AF%9D%E8%83%BD%E5%8A%9B.png">
+<meta property="og:image" content="http://example.com/images/%E6%8F%92%E4%BB%B6%E8%83%BD%E5%8A%9B.png">
+<meta property="og:image" content="http://example.com/images/%E5%A4%9A%E6%A8%A1%E6%80%81%E8%83%BD%E5%8A%9B.png">
+<meta property="og:image" content="http://example.com/images/AI2.0.png">
+<meta property="article:published_time" content="2025-07-28T06:13:53.000Z">
+<meta property="article:modified_time" content="2025-07-28T09:33:43.808Z">
+<meta property="article:author" content="yuqi pan">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/images/%E7%95%8C%E9%9D%A2.png">
+  
+  
+  
+  <title>AI 2.0 产品经理作业1 - haechannnnn</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"v5Pj40Hj1telkcFvIi7OQDKJ-gzGzoHsz","app_key":"wHxXXI6tSzYelMqiajCCH6la","server_url":"https://v5pj40hj.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>haechannnnn</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="AI 2.0 产品经理作业1"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        yuqi pan
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-07-28 14:13" pubdate>
+          2025年7月28日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          49 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">AI 2.0 产品经理作业1</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="1-AI产品体验报告"><a href="#1-AI产品体验报告" class="headerlink" title="1.AI产品体验报告"></a>1.AI产品体验报告</h1><hr>
+<h2 id="一位AI产品新人的通义千问深度体验：从初见到洞察"><a href="#一位AI产品新人的通义千问深度体验：从初见到洞察" class="headerlink" title="一位AI产品新人的通义千问深度体验：从初见到洞察"></a>一位AI产品新人的通义千问深度体验：从初见到洞察</h2><h3 id="写在前面：我的PM第一课"><a href="#写在前面：我的PM第一课" class="headerlink" title="写在前面：我的PM第一课"></a>写在前面：我的PM第一课</h3><p>从前端开发转向产品经理，是我职业路径中的一次重要转折。过去的我，习惯于从“如何实现”出发思考问题，面对一个需求，我首先会拆解技术点、选择框架、规划组件结构、优化交互体验。而当我真正开始尝试“产品思维”时，我才意识到：在“如何做”之前，真正重要的是“为什么做”和“为谁做”。</p>
+<p>这份《通义千问》的体验报告，是我正式迈入产品经理领域的第一课。在这次体验过程中，我尽量放下原有的工程视角，去关注一个AI产品背后的用户价值、使用场景、核心能力与产品设计逻辑。</p>
+<p>选择通义千问作为体验对象，一方面是因为它是国内领先的大模型应用代表，另一方面，它所代表的“AI对话助手”这一类产品，正处于快速演化的浪潮之中，产品形态尚未定型，正是最值得去观察、学习和思考的阶段。</p>
+<p>在这份报告中，我将围绕以下几个维度展开分析：</p>
+<ol>
+<li><strong>产品入口与地位</strong></li>
+<li><strong>核心对话能力</strong></li>
+<li><strong>插件&#x2F;工具能力</strong></li>
+<li><strong>多模态能力</strong></li>
+<li><strong>生态与差异化策略</strong></li>
+</ol>
+<p>我并不奢望一份报告能涵盖所有产品经理该具备的能力，但我希望它能成为我的产品启蒙之作——一次主动思考用户价值、感受设计细节、判断产品策略的过程。作为一名前端工程师，我在体验通义千问的过程中时常会跳回“这块应该用哪些技术实现？”、“这个交互是否能复用？”的思路，但我正在努力转换角度，去理解这背后的“用户为什么需要这个？”、“这个功能带来了什么体验上的提升？”。</p>
+<p>这就是我作为一个初学者的真实写照。接下来，我将从产品的角度，逐步拆解“通义千问”这款AI产品的使用体验，尝试交出我的第一份产品分析作业。</p>
+<h3 id="一、产品入口与定位：用户初识通义千问的第一步"><a href="#一、产品入口与定位：用户初识通义千问的第一步" class="headerlink" title="一、产品入口与定位：用户初识通义千问的第一步"></a>一、产品入口与定位：用户初识通义千问的第一步</h3><p>作为一款面向大众的对话式AI产品，通义千问承担着双重角色：一方面，它是阿里在大模型时代的产品化落地代表；另一方面，它也被用户视为个人智能助理的入口。在产品体验的起点，如何让用户快速理解产品的能力边界，并顺畅完成“首次提问”，直接决定了用户对产品的第一印象与后续使用意愿。</p>
+<p>从入口设计来看，通义千问在主页面设置了搜索输入框、“精选智能体”推荐、插件功能探索等多个模块。整体信息架构以“轻引导+多入口”为主，试图覆盖不同层级用户的使用路径：新手可以直接点击推荐提示词或角色进入任务场景，熟练用户则可以直接输入自然语言指令，快速获取答案。</p>
+<p>值得注意的是，“精选智能体”机制在目前的大模型应用中较为少见。它通过预设提示词与能力包装，降低了用户表达负担，也提升了功能探索的引导性。这一机制从产品策略上看，是通义千问尝试通过“人格化分工”来拓展用户粘性的举措。</p>
+<p>然而，在实际体验中也发现部分细节仍有优化空间。例如，首页信息密度相对较高，对于初次访问的用户而言，容易出现“认知超载”的情况。同时，“精选智能体”和“插件”两个概念在交互上较为相似，缺乏清晰的分界，可能造成认知混淆。</p>
+<p>总体而言，通义千问在入口设计上展现出对“产品易用性”的关注，其角色机制也为构建后续生态系统埋下伏笔。但在信息层级、功能解释、用户引导方面仍有进一步优化的空间。</p>
+<p><img src="/images/%E7%95%8C%E9%9D%A2.png" srcset="/img/loading.gif" lazyload alt="通义千问界面"></p>
+<h3 id="二、核心对话能力：从“聊天工具”到“通用智能助手”"><a href="#二、核心对话能力：从“聊天工具”到“通用智能助手”" class="headerlink" title="二、核心对话能力：从“聊天工具”到“通用智能助手”"></a>二、核心对话能力：从“聊天工具”到“通用智能助手”</h3><p>通用对话能力是大语言模型产品的基本盘，也是用户最直观感受到“智能程度”的部分。对通义千问而言，这项能力不仅是承接用户所有任务的交互主入口，也体现了其模型基础的训练效果与产品能力边界。</p>
+<p>在实际体验中，通义千问表现出对中文自然语言的良好理解能力，能够较准确地把握用户意图，进行内容生成、知识问答、文本润色等任务。对一些偏复杂的输入指令（如“请帮我写一篇XX背景下的分析性短文”），它也能理解上下文意图并做出结构化回应，说明其语义理解与生成能力较为成熟。</p>
+<p>通义千问在响应逻辑上采用了较强的“泛化适配”策略，即用户不必严格按照提示词语法进行输入，系统也能做出容错处理。这对提升用户体验十分重要，尤其是面对非技术背景的用户时。</p>
+<p>不过，在使用过程中也发现几点值得注意的不足：</p>
+<ul>
+<li>多轮对话中的上下文延续能力仍有限。当连续进行数次追问时，系统可能忽略早期的上下文，或出现“答非所问”。</li>
+<li>回答存在“模棱两可”或“内容重复堆砌”的现象，尤其在知识密集型任务中，对事实信息的提取略显松散。</li>
+<li>对于某些命令式请求（如“对以下内容进行六级难度翻译”），其执行粒度与风格控制不够稳定。</li>
+</ul>
+<p>在我作为前端开发者的视角中，这一部分尤为关键。此前我更多关注“指令输入 → 响应渲染”的技术路径，而转向产品后，我开始关注一个更根本的问题：<strong>用户究竟在对话中“解决了什么问题”？</strong> 比如，当用户要求“总结一段长文本”，系统是否给出了结构清晰、重点突出的结果？当用户让它“写一篇推文”，生成的语言是否具有目标平台的风格感？</p>
+<p>从用户价值角度看，通义千问的核心对话能力可用于<strong>快速获取信息、内容初稿生成、观点激发</strong>等通用场景，适合内容创作者、学生、轻量办公用户等群体使用。但涉及到长对话上下文强相关以及专业领域（如法律、医疗、金融等），其对话能力可能存在一定局限性，需要用户进行更详细的指令引导。</p>
+<p><img src="/images/%E5%AF%B9%E8%AF%9D%E8%83%BD%E5%8A%9B.png" srcset="/img/loading.gif" lazyload alt="通义千问对话能力"></p>
+<h3 id="三、插件与工具能力：从通用AI走向场景化助手"><a href="#三、插件与工具能力：从通用AI走向场景化助手" class="headerlink" title="三、插件与工具能力：从通用AI走向场景化助手"></a>三、插件与工具能力：从通用AI走向场景化助手</h3><p>在通义千问的产品体系中，“插件”与“工具”能力是其从通用对话模型向任务型助手延伸的关键模块。它不仅拓展了产品的功能边界，也体现了团队对用户真实使用场景的探索与抽象能力。</p>
+<p>通义千问目前开放的插件包括：文档总结、表格分析、代码生成、图表生成、思维导图、网页搜索等多个方向，覆盖办公、学习、开发、创作等高频需求。这些插件可通过“插件中心”入口启用，激活后用户可以在对话中直接调用其能力。</p>
+<p>在体验过程中，我以“文档总结”、“思维导图”和“写作助手”作为主要测试对象：</p>
+<ul>
+<li>在“文档总结”插件中，上传PDF文件后，系统能够快速返回文档概要与结构化要点，适用于会议纪要、政策文件等内容的快速理解；</li>
+<li>“思维导图”插件支持将对话内容自动整理为图形结构，有助于知识点梳理与逻辑可视化；</li>
+<li>“写作助手”则提供了多种写作模版，包括周报生成、邮件润色、演讲稿起草等，简化了写作流程。</li>
+</ul>
+<p>整体来看，通义千问的插件机制通过“任务类型封装 + 一键调用”的方式，显著提升了AI能力的“可用性”与“可复用性”。对于不熟悉自然语言提示工程的普通用户而言，这种明确功能边界的工具形式，更容易理解并产生依赖。</p>
+<p>不过，该模块也存在一些可优化之处：</p>
+<ul>
+<li>插件之间的能力边界不够明确，如“写作助手”与“角色系统”存在一定功能重合；</li>
+<li>插件执行结果多以文字形式呈现，交互上略显扁平，缺乏进一步“修改-确认-再生成”的操作链路；</li>
+<li>插件管理界面较为基础，缺乏“我的常用插件”、“插件评分反馈”等功能，难以形成长期用户黏性。</li>
+</ul>
+<p>从产品经理的角度看，插件与工具能力是通义千问差异化竞争的重要一环。它不仅提升了产品的功能深度，也为用户提供了更高效的工作方式。未来，随着插件生态的不断丰富与完善，这一模块有望成为用户日常工作与学习中不可或缺的智能助手。<br><img src="/images/%E6%8F%92%E4%BB%B6%E8%83%BD%E5%8A%9B.png" srcset="/img/loading.gif" lazyload alt="通义千问插件能力"></p>
+<h3 id="四、多模态能力：语言模型之外的感知延伸"><a href="#四、多模态能力：语言模型之外的感知延伸" class="headerlink" title="四、多模态能力：语言模型之外的感知延伸"></a>四、多模态能力：语言模型之外的感知延伸</h3><p>随着大模型的发展，语言不再是唯一的交互媒介，图像、音频、文件等多模态输入正在成为通用AI助手的重要组成部分。通义千问也在这一方向上做出了探索，目前已支持用户上传图片、PDF、Word等文件，并在对话框内直接对其进行解析与问答。这标志着其从“文本助手”向“感知型助手”迈出重要一步。</p>
+<p>在实际体验中，我测试了以下多模态能力：</p>
+<ul>
+<li><strong>图片识别与理解</strong>：用户可上传一张图片，并要求模型识别其中的内容或进行文字总结。例如上传一张PPT截图，要求“帮我总结这张图讲了什么”；或上传思维导图图片，询问“帮我整理成结构化要点”。</li>
+<li><strong>文档问答与解析</strong>：支持上传PDF、Word等格式文件，用户可对文件内容进行自由提问，如“请总结这份PDF的核心观点”、“第3页中提到的建议有哪些？”</li>
+<li><strong>图文结合的上下文对话</strong>：在上传图片或文件后继续对话，可实现一定程度的多轮关联问答（如继续追问某张图中的内容或表格含义）。</li>
+</ul>
+<p>通义千问在图像识别的基本能力方面表现稳定，能够较好地理解图中文字、视觉结构和部分图表内容。在文件解析方面，其文档摘要能力、结构分析能力与之前插件机制形成呼应，构建出相对完整的信息处理链条。</p>
+<p>但同时，也发现了一些体验不足之处：</p>
+<ul>
+<li><strong>视觉理解的深度仍有限</strong>：对于抽象图形、流程图、手写图像等场景，识别效果较弱，无法给出准确结构化输出；</li>
+<li><strong>缺乏“可视化输出”反馈</strong>：所有图片解析结果仍以文本呈现，缺少图表、标签、可视结构等辅助输出形式；</li>
+<li><strong>文件处理缺乏细节控制</strong>：例如无法指定分析页码范围、无法高亮引用文件原文位置等，影响复杂任务处理的精度。</li>
+</ul>
+<p>从产品设计角度看，多模态能力并不仅仅是模型能力的展示，更是AI在真实复杂场景中体现“上下文理解能力”的关键。尤其在办公、教育、文档处理等高频场景中，用户对“非文本信息”的处理能力提出了更高要求。</p>
+<p>对我而言，这一能力的最大启发在于：产品经理在构建AI产品时，必须考虑输入媒介的多样性——用户的需求往往并不是“告诉AI一段话”，而是“丢给AI一个东西，让它帮我看懂”。如何把这类“非结构化输入”转化为结构化任务，是未来AI产品的关键挑战。</p>
+<p><img src="/images/%E5%A4%9A%E6%A8%A1%E6%80%81%E8%83%BD%E5%8A%9B.png" srcset="/img/loading.gif" lazyload alt="通义千问多模态能力"></p>
+<h3 id="五、产品策略与生态联动：通义千问的产品化路径与未来展望"><a href="#五、产品策略与生态联动：通义千问的产品化路径与未来展望" class="headerlink" title="五、产品策略与生态联动：通义千问的产品化路径与未来展望"></a>五、产品策略与生态联动：通义千问的产品化路径与未来展望</h3><p>与ChatGPT、Claude、Gemini等海外大模型产品相比，通义千问在产品形态上虽然趋于一致，但其底层逻辑与路径选择却深受“生态导向型思维”影响。作为阿里旗下的大模型应用代表，通义千问不仅是一个对话产品，更是整个阿里云智能战略中的重要一环。</p>
+<p>首先，从账号与场景联动来看，通义千问已实现与<strong>阿里云账号体系</strong>打通，用户可通过同一账号访问“千问网页版”、“钉钉插件”、“通义App”等多个入口。在企业场景中，通义千问逐渐融入钉钉办公流、阿里云IDE开发环境、阿里文档等产品矩阵，构成AI能力在阿里系工作场景中的嵌套式分布。这种深度绑定既增强了平台的日常可达性，也提升了用户对AI工具的认知密度。</p>
+<p>其次，在能力生态上，通义千问推动“插件机制+角色系统”的组合方式，使AI能力逐步从“聊天助手”向“个人专属AI助手”过渡。这一策略与字节跳动“豆包”的轻量级场景分发逻辑、以及百度“文心一言”的产业化应用导向有所差异，体现了阿里“平台-工具一体化”的产品思路。</p>
+<p>但在当前阶段，通义千问仍面临两类核心挑战：</p>
+<ul>
+<li><strong>产品场景深度不足</strong>：尽管已具备插件与多模态支持，但相较于企业日常使用（如CRM、项目管理、数据看板等），实际可落地任务链条仍显零散；</li>
+<li><strong>用户分层策略不清晰</strong>：产品既面向C端大众，又尝试对接B端应用，但在界面、功能、交互路径上并未区分使用者角色，导致部分能力被低频利用，影响留存。</li>
+</ul>
+<p>站在“产品新人的视角”回看这部分，我尤其意识到一个AI产品要真正走向长期增长，不能只追求模型能力的曝光，更要深入理解用户在哪里<strong>高频使用AI</strong>，<strong>在哪些工作链条中可插入AI能力</strong>，从而实现“从工具到习惯”的转化。</p>
+<p>作为一名前端转产品的实践者，我曾关注“这个功能能不能实现”，但现在我更在意“这个功能是否值得做”、“用户真的会在这个场景中使用它吗”。通义千问提供了一个鲜活的样本：它的路径不是最快的，但足够系统，它正在通过不断嵌入生态、构建插件机制、探索角色绑定，逐步从“AI能力集合”转化为“场景解决方案提供者”。</p>
+<h3 id="总结：从体验者到思考者"><a href="#总结：从体验者到思考者" class="headerlink" title="总结：从体验者到思考者"></a>总结：从体验者到思考者</h3><p>作为产品经理的探索者，这次对通义千问的系统性体验，不仅让我理解了一款AI产品是如何搭建起“可用 → 好用 → 想用”的完整能力链条，也让我第一次站在用户与业务之间的交汇点上，尝试用更产品化的视角思考技术的价值。</p>
+<p>通义千问是一款在产品形态上不断演进的大模型产品。它从最初的对话型助手，逐步扩展到插件体系、多模态输入、AI角色机制等模块，在中文语境下构建出了一套较完整的泛用型智能助手体系。虽然目前仍有诸如上下文稳定性、交互层次感、用户分层策略等不足，但它体现出阿里在“生态级产品打造”上的长期主义视野。</p>
+<p>对于我而言，最大的收获不是“用过AI产品”，而是学会了<strong>如何评估一个AI产品是否有效、是否有用、是否具备可持续演化的产品策略</strong>。每一次功能测试的背后，我都在问自己：</p>
+<ul>
+<li>这个功能解决了用户的什么问题？</li>
+<li>是否还有更简单的方式达成目标？</li>
+<li>用户真的会在这里使用这项能力吗？</li>
+<li>如果我是这款产品的负责人，我会如何取舍？</li>
+</ul>
+<p>这也让我意识到，产品思维的本质，或许并不是“想到一个好点子”，而是<strong>持续用结构化的方式解决真实问题</strong>。</p>
+<hr>
+<h1 id="2-通用与垂域的AI产品"><a href="#2-通用与垂域的AI产品" class="headerlink" title="2.通用与垂域的AI产品"></a>2.通用与垂域的AI产品</h1><h2 id="通用与垂域-AI-产品能力对比表"><a href="#通用与垂域-AI-产品能力对比表" class="headerlink" title="通用与垂域 AI 产品能力对比表"></a>通用与垂域 AI 产品能力对比表</h2><table>
+<thead>
+<tr>
+<th>产品名称</th>
+<th>产品类型</th>
+<th>AI形态 &#x2F; 应用形式</th>
+<th>核心AI技术特点</th>
+<th>代表能力优势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>通义千问</strong></td>
+<td>通用大模型</td>
+<td>文本对话 + 插件调用 + 多模态上传（图&#x2F;文）</td>
+<td>Qwen 系列（Qwen1.5 &#x2F; Qwen2），MoE 架构，大上下文窗口（256k+），支持图文&#x2F;文档&#x2F;角色多模态</td>
+<td>插件生态完整、中文理解强、多场景任务表现优异</td>
+</tr>
+<tr>
+<td><strong>文心一言</strong></td>
+<td>通用大模型</td>
+<td>对话助手 + 写作&#x2F;问答助手 + 文档理解</td>
+<td>ERNIE 模型，融合知识图谱预训练，强化中文语义&#x2F;逻辑推理，增强检索生成（RAG）</td>
+<td>中文问答准确率高，百度生态集成度高</td>
+</tr>
+<tr>
+<td><strong>ChatGPT</strong></td>
+<td>通用大模型</td>
+<td>文本对话 + 多模态（图像&#x2F;语音） + 插件 + Agents</td>
+<td>GPT-4 &#x2F; GPT-4o 模型，支持图像&#x2F;语音输入，具备工具调用能力（Code Interpreter、浏览器等）</td>
+<td>对话自然，开发能力强，插件生态完善，推理能力领先</td>
+</tr>
+<tr>
+<td><strong>GitHub Copilot</strong></td>
+<td>垂域模型</td>
+<td>IDE 辅助编程助手（VSCode &#x2F; JetBrains 插件）</td>
+<td>基于 OpenAI Codex &#x2F; GPT 模型，专为代码上下文理解与自动补全训练，支持多种语言</td>
+<td>代码补全与解释能力强，显著提升开发效率</td>
+</tr>
+<tr>
+<td><strong>智谱清言</strong></td>
+<td>垂域模型</td>
+<td>专业问答 + 报告生成 + 法律&#x2F;金融垂类应用</td>
+<td>GLM 系列（GLM-130B &#x2F; GLM-4），知识图谱融合，强化结构化知识问答与内容生成能力</td>
+<td>专业领域输出精准，适用于法律、财务等垂类应用场景</td>
+</tr>
+<tr>
+<td><strong>Kimi-VL</strong></td>
+<td>通用模型延展</td>
+<td>超长文档处理 + 界面操作 + 多模态读写</td>
+<td>百万级上下文窗口，网页&#x2F;PDF读取与问答，支持链式思考（CoT）与自主任务执行</td>
+<td>超长文本总结能力强，适合合同、论文、网页信息处理</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="3-AI技术概念总结"><a href="#3-AI技术概念总结" class="headerlink" title="3.AI技术概念总结"></a>3.AI技术概念总结</h1><p><img src="/images/AI2.0.png" srcset="/img/loading.gif" lazyload alt="AI技术概念总结"></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>AI 2.0 产品经理作业1</div>
+      <div>http://example.com/2025/07/28/AI-PM-Work1/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>yuqi pan</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年7月28日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/07/24/AI-PM/" title="产品经理角色&amp;AI带来的变化">
+                        <span class="hidden-mobile">产品经理角色&amp;AI带来的变化</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"q1VlmYyYr07kxtSiLdvtxwli-MdYXbMMI","appKey":"4Jjlm7l8vGgpuTatnIAinO5Y","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
